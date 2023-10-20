@@ -22,7 +22,7 @@ public class LaptopService implements LaptopInterface{
 		
 		return "Laptop added successfully";
 	}
-
+ 
 	@Override
 	public List<Laptop> getallLaptops() {
 		
