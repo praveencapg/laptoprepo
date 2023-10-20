@@ -1,7 +1,11 @@
 package com.cg.Entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Laptop {
-	
+	@Id
 	private int laptopId;
 	private String brand;
 	private String color;
