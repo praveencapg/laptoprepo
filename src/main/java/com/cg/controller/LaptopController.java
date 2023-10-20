@@ -3,6 +3,7 @@ package com.cg.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,8 +28,8 @@ public class LaptopController {
 	public String addLaptop(@RequestBody Laptop lp) {
 		return lservice.addLaptop(lp);
 	}
-	
-	public List<Laptop> getAll(@RequestParam("id") int id){
+	@GetMapping("/get")
+	public List<Laptop> getAll(){
 		return lservice.getallLaptops();
 	
 	}
